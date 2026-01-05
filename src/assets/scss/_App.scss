@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: $dark-blue;
+  color: $teal;
+  font-family: $font-primary;
+  font-weight: $font-weight-regular;
+  font-size: clamp(1.625rem, 3.519vw + 0.833rem, 4rem);
+}
+
+#root {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: $font-weight-regular;
+  margin: $block-margin 0;
+  font-size: clamp(1.625rem, 3.519vw + 0.833rem, 4rem);
+}
