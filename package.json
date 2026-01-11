@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.14.2",
+    "install": "^0.13.0",
+    "npm": "^11.7.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
@@ -26,6 +30,7 @@
     "sass": "^1.97.1",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vite-plugin-svgr": "^4.5.0"
   }
 }
