@@ -1,0 +1,33 @@
+/** @type {import("stylelint").Config} */
+export default {
+	extends: ["stylelint-config-standard-scss"],
+	rules: {
+		"no-descending-specificity": null,
+		"color-named": null,
+		"declaration-property-unit-allowed-list": {
+			"font-size": ["rem", "px", "%", "em", "vw"],
+		},
+		"selector-class-pattern": null,
+		"comment-empty-line-before": null,
+		"color-hex-length": null,
+		"no-empty-source": null,
+		"keyframes-name-pattern": null,
+		"declaration-block-no-redundant-longhand-properties": null,
+		"declaration-block-no-shorthand-property-overrides": null,
+		"custom-property-pattern": null,
+		"at-rule-empty-line-before": null,
+		"function-url-quotes": "always",
+		"property-no-deprecated": null,
+		"declaration-property-value-keyword-no-deprecated": null,
+		"scss/at-extend-no-missing-placeholder": null,
+		"scss/at-mixin-pattern": null,
+		"scss/percent-placeholder-pattern": null,
+		"scss/dollar-variable-pattern": null,
+		"color-function-notation": null,
+		"alpha-value-notation": null,
+		"color-function-alias-notation": null,
+		"shorthand-property-no-redundant-values": null,
+		"scss/at-function-pattern": null,
+		"selector-id-pattern": null,
+	},
+};
