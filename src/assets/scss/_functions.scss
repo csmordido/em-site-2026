@@ -3,6 +3,5 @@
 // Function to convert pixels to rems
 @function toRem($pixels, $base: 16px) {
 	// Use math.div for division in modern Sass
-	$remValue: math.div($pixels, $base) * 1rem;
-	@return $remValue;
+	@return math.div($pixels, $base) + rem;
 }

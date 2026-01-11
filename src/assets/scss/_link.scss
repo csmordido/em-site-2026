@@ -1,15 +1,55 @@
+@use "./functions" as *;
+@use "./variables" as *;
+
 .link {
 	display: inline-block;
 	position: relative;
+	color: $teal;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		.asterisk {
+			transform: rotate(180deg);
+			opacity: 0;
+			transition:
+				rotate 0.3s ease-in-out,
+				opacity 0.3s ease-in-out;
+		}
+
+		.circle {
+			opacity: 1;
+			transition: opacity 0.3s ease-in-out;
+		}
+	}
 
 	&__indicator {
-		height: torem(29.5px);
-		width: torem(31.5px);
+		height: toRem(29.5px);
+		width: toRem(31.5px);
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		position: absolute;
+		inset-inline-end: 0;
+		inset-block-start: toRem(-20px);
 
 		img {
 			height: 100%;
 			width: 100%;
 			object-fit: contain;
+			grid-area: 1 / 1;
+		}
+
+		.circle {
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+		}
+
+		.asterisk {
+			transform: rotate(0deg);
+			transition:
+				rotate 0.3s ease-in-out,
+				opacity 0.3s ease-in-out;
 		}
 	}
 }

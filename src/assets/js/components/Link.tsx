@@ -10,10 +10,10 @@ const Link = ({ href, text }: LinkProps) => {
 	return (
 		<a className="link" href={href}>
 			{text}
-			<span className="link__indicator">
-				<img src={asterisk} alt="" />
-				<img src={circle} alt="" />
-			</span>
+			<div className="link__indicator">
+				<img className="asterisk" src={asterisk} alt="" />
+				<img className="circle" src={circle} alt="" />
+			</div>
 		</a>
 	);
 };

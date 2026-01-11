@@ -2,7 +2,7 @@
 
 //  components
 @use "./App";
-@use "./Link";
+@use "./link";
 
 // utilities
-@use "./functions";
+@use "./functions" as *;
