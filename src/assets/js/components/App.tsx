@@ -1,12 +1,11 @@
 import Header from "./Header";
+import Phrase1 from "./Phrase1";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<h1>
-				Hi, I'm <span>Eyel</span> and I make websites pr<span>e</span>tty
-			</h1>
+			<Phrase1 />
 		</>
 	);
 }
