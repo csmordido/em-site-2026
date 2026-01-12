@@ -1,0 +1,36 @@
+@use "./functions" as *;
+@use "./variables" as *;
+
+.header {
+	background-color: $teal;
+
+	.links {
+		list-style-type: none;
+		margin: unset;
+		padding: unset;
+		display: flex;
+		flex-wrap: nowrap;
+		column-gap: toRem(25px);
+		align-items: center;
+		justify-content: end;
+		height: toRem(50px);
+		padding-top: toRem(7px);
+	}
+
+	.link {
+		color: $dark-blue;
+		font-size: toRem(16px);
+		font-weight: $font-weight-semibold;
+		display: block;
+
+		img {
+			color: $dark-blue;
+		}
+	}
+
+	.link__indicator {
+		inset-block-start: toRem(-7px);
+		height: toRem(10px);
+		width: toRem(10px);
+	}
+}

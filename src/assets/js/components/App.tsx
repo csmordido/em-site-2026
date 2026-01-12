@@ -1,16 +1,14 @@
-import Link from "./Link";
+import Header from "./Header";
 
 function App() {
-  return (
-    <header>
-      <h1>
-        Hi, I'm <span>Eyel</span> and I make websites pr<span>e</span>tty
-      </h1>
-      <p>
-        <Link text="my link" href="#" />
-      </p>
-    </header>
-  );
+	return (
+		<>
+			<Header />
+			<h1>
+				Hi, I'm <span>Eyel</span> and I make websites pr<span>e</span>tty
+			</h1>
+		</>
+	);
 }
 
 export default App;

@@ -1,8 +1,10 @@
-@use "./reset";
+@use "./reset" as *;
 
 //  components
 @use "./App";
 @use "./link";
+@use "./header";
 
 // utilities
 @use "./functions" as *;
+@use "./helpers" as *;
