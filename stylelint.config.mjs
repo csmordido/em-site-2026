@@ -29,5 +29,6 @@ export default {
 		"shorthand-property-no-redundant-values": null,
 		"scss/at-function-pattern": null,
 		"selector-id-pattern": null,
+		"function-name-case": null,
 	},
 };
