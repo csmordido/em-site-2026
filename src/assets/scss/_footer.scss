@@ -1,0 +1,16 @@
+@use "./variables" as *;
+@use "./functions" as *;
+
+.footer {
+	background-color: $teal;
+	color: $dark-blue;
+	font-size: toRem(16px);
+	height: toRem(50px);
+
+	.content-width {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+}

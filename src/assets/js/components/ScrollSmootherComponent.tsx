@@ -8,11 +8,14 @@ interface ScrollSmootherComponentProps {
 
 const ScrollSmootherComponent = ({ children }: ScrollSmootherComponentProps) => {
 	useGSAP(() => {
-		ScrollSmoother.create({
+		const smoother = ScrollSmoother.create({
 			smooth: 1.25,
 			wrapper: "#smooth-wrapper",
 			normalizeScroll: true,
+			effects: true,
 		});
+
+		smoother.effects(".parallax", { lag: 0.5 });
 	}, []);
 
 	return (

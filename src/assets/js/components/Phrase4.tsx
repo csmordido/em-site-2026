@@ -35,7 +35,7 @@ const Phrase4 = () => {
 	);
 
 	return (
-		<div className="phrase-4" ref={container}>
+		<div className="phrase-4 parallax" ref={container}>
 			<div>
 				most of the time&nbsp;<span className="animated-word">build</span>&nbsp;websites for&nbsp;
 				<Link href="https://plank.co" text="Plank" ariaLabel="Visit Plank's website" />.

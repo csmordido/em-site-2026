@@ -30,7 +30,7 @@ const Phrase2 = () => {
 	);
 
 	return (
-		<div className="phrase-2" ref={container}>
+		<div className="phrase-2 parallax" ref={container}>
 			<p>
 				While ensuring content is easily <span className="animated-word">accessible</span>
 			</p>
