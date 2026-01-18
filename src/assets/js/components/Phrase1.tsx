@@ -1,7 +1,8 @@
 import { useRef } from "react";
-import eyelashes from "../../images/eyelashes.svg";
 import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import EyeLashesSVG from "./EyeLashesSVG";
 
 const Phrase1 = () => {
 	const container = useRef<HTMLHeadingElement>(null);
@@ -9,8 +10,26 @@ const Phrase1 = () => {
 	useGSAP(
 		() => {
 			if (!container.current) return;
+
+			const tl = gsap
+				.timeline({ defaults: { duration: 1, stagger: 0.2 } })
+				.from(".name__detail", {
+					y: 10,
+					opacity: 0,
+					ease: "power2.out",
+				})
+				.from(".drawSvg", {
+					drawSVG: "0",
+				});
+
+			ScrollTrigger.create({
+				trigger: container.current,
+				start: "center center",
+				animation: tl,
+			});
 		},
-		{ scope: container },
+
+		{ scope: container, dependencies: [] },
 	);
 
 	return (
@@ -21,7 +40,7 @@ const Phrase1 = () => {
 			</span>
 			&nbsp; and I make websites pr
 			<span className="pretty">
-				<img className="pretty__drawing" src={eyelashes} alt="" />e
+				<EyeLashesSVG />e
 			</span>
 			tty
 		</h1>
