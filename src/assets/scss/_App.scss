@@ -9,10 +9,10 @@ body {
 	color: $teal;
 	font-family: $font-primary;
 	font-weight: $font-weight-regular;
-	font-size: clamp(1.5rem, 4.167vw + 0.25rem, 4rem);
+	font-size: clamp(1.5rem, 7.353vw - 0.706rem, 4rem);
 }
 
-#smooth-content {
+.content-wrapper {
 	width: 90%;
 	max-width: 1280px;
 	margin: 0 auto;
@@ -22,5 +22,5 @@ body {
 h1 {
 	font-weight: $font-weight-regular;
 	margin: $block-margin 0;
-	font-size: clamp(1.5rem, 4.167vw + 0.25rem, 4rem);
+	font-size: clamp(1.5rem, 7.353vw - 0.706rem, 4rem);
 }
