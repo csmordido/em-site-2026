@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+.phrase-3 {
+	margin: $block-margin 0;
+
+	.link__indicator {
+		height: clamp(0.938rem, 2.941vw + 0.055rem, 1.938rem);
+		width: auto;
+		inset-block-start: -0.8rem;
+	}
+
+	.link {
+		color: $teal;
+	}
+
+	.animated-link {
+		position: relative;
+
+		.wave {
+			position: absolute;
+			inset-inline-start: 0;
+			inset-block-end: 0;
+			height: auto;
+			width: 100%;
+			z-index: -1;
+		}
+	}
+}

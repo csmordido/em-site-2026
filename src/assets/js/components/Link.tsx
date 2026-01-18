@@ -1,6 +1,5 @@
-import asterisk from "../../images/asterisk.svg";
-import circle from "../../images/circle.svg";
-
+import AsteriskSVG from "./AsteriskSVG";
+import CircleSVG from "./CircleSVG";
 interface LinkProps {
 	href: string;
 	text: string;
@@ -11,8 +10,8 @@ const Link = ({ href, text }: LinkProps) => {
 		<a className="link" href={href}>
 			{text}
 			<div className="link__indicator">
-				<img className="asterisk" src={asterisk} alt="" />
-				<img className="circle" src={circle} alt="" />
+				<AsteriskSVG />
+				<CircleSVG />
 			</div>
 		</a>
 	);
