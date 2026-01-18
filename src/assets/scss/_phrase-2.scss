@@ -1,0 +1,10 @@
+@use "./variables" as *;
+
+.phrase-2 {
+	margin: $block-margin 0;
+
+	.animated-word {
+		font-weight: $font-weight-bold;
+		color: $light-blue;
+	}
+}

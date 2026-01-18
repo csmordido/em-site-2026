@@ -2,6 +2,8 @@
 @use "./variables" as *;
 
 .phrase-1 {
+	margin: $block-margin 0;
+
 	.name {
 		position: relative;
 

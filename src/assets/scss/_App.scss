@@ -21,6 +21,5 @@ body {
 
 h1 {
 	font-weight: $font-weight-regular;
-	margin: $block-margin 0;
 	font-size: clamp(1.5rem, 7.353vw - 0.706rem, 4rem);
 }
