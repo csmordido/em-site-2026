@@ -12,15 +12,18 @@ const Phrase1 = () => {
 			if (!container.current) return;
 
 			const tl = gsap
-				.timeline({ defaults: { duration: 1, stagger: 0.2 } })
+				.timeline({ defaults: { duration: 1, stagger: 0.2, ease: "power2.out" } })
 				.from(".name__detail", {
 					y: 10,
 					opacity: 0,
-					ease: "power2.out",
 				})
-				.from(".drawSvg", {
-					drawSVG: "0",
-				});
+				.fromTo(
+					".drawSvg",
+					{
+						drawSVG: "100% 100%",
+					},
+					{ drawSVG: "100% 0%" },
+				);
 
 			ScrollTrigger.create({
 				trigger: container.current,
