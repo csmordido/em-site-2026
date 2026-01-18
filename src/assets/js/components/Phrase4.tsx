@@ -29,7 +29,6 @@ const Phrase4 = () => {
 				trigger: container.current,
 				start: "center center+=200",
 				animation: tl,
-				markers: true,
 			});
 		},
 		{ scope: container, dependencies: [] },
