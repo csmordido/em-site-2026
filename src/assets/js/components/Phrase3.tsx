@@ -33,7 +33,11 @@ const Phrase3 = () => {
 			<div>
 				Sometimes I&nbsp;
 				<span className="animated-link">
-					<Link href="#" text="write" />
+					<Link
+						href="https://dev.to/plank/using-css-size-container-queries-43ef"
+						text="write"
+						ariaLabel="Go to article"
+					/>
 					<WaveSVG />
 				</span>
 			</div>
