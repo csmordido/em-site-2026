@@ -2,8 +2,9 @@
 @use "./functions" as *;
 
 .footer {
-	background-color: $teal;
-	color: $dark-blue;
+	background-color: $dark-blue;
+	color: $light-teal;
+	font-weight: $font-weight-semibold;
 	font-size: toRem(16px);
 	height: toRem(50px);
 

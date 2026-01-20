@@ -6,10 +6,10 @@ const Header = () => {
 			<nav className="content-width">
 				<ul className="links">
 					<li>
-						<Link text="Home" href="/" />
+						<Link text="About" href="#about" ariaLabel="Go to about section" />
 					</li>
 					<li>
-						<Link text="Work" href="/work" />
+						<Link text="Work" href="#work" ariaLabel="Go to work section" />
 					</li>
 				</ul>
 			</nav>

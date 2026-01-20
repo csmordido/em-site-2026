@@ -1,0 +1,24 @@
+@use "./variables" as *;
+
+.work {
+	padding: $block-margin 0;
+	background-color: $light-teal;
+
+	&__list {
+		list-style-type: none;
+	}
+
+	&__item {
+		padding: 2rem 0;
+	}
+
+	.link {
+		color: $dark-blue;
+	}
+
+	.link__indicator {
+		height: clamp(0.938rem, 2.941vw + 0.055rem, 1.938rem);
+		width: auto;
+		inset-block-start: -0.8rem;
+	}
+}

@@ -22,7 +22,7 @@ const Phrase2 = () => {
 				scrub: true,
 				once: true,
 				animation: gsap.to(animatedWord.chars, {
-					color: "#5bc0be",
+					color: "#81bebc",
 					stagger: 0.1,
 					duration: 0.5,
 					ease: "power2.out",

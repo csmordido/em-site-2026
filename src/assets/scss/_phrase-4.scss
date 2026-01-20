@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 .phrase-4 {
-	margin: $block-margin 0 clamp(3.75rem, 56.985vw - 13.346rem, 23.125rem) 0;
+	margin: $block-margin 0 $block-margin 0;
 	position: relative;
 
 	.animated-word {

@@ -3,6 +3,7 @@ import Phrase1 from "./Phrase1";
 import Phrase2 from "./Phrase2";
 import Phrase3 from "./Phrase3";
 import Phrase4 from "./Phrase4";
+import Work from "./Work";
 import Footer from "./Footer";
 import ScrollSmootherComponent from "./ScrollSmootherComponent";
 import ContentWrapper from "./ContentWrapper";
@@ -21,6 +22,7 @@ function App() {
 				<Phrase2 />
 				<Phrase3 />
 				<Phrase4 />
+				<Work />
 				<Footer />
 			</ContentWrapper>
 		</ScrollSmootherComponent>
