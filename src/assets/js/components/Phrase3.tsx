@@ -14,8 +14,10 @@ const Phrase3 = () => {
 
 			ScrollTrigger.create({
 				trigger: container.current,
-				start: "center center+=200",
-				end: "bottom+=100%",
+				start: "top center",
+				end: "bottom center",
+				scrub: true,
+				once: true,
 				animation: gsap.fromTo(
 					".wave__path",
 					{

@@ -17,7 +17,10 @@ const Phrase2 = () => {
 
 			ScrollTrigger.create({
 				trigger: container.current,
-				start: "center center+=200",
+				start: "top center",
+				end: "bottom center",
+				scrub: true,
+				once: true,
 				animation: gsap.to(animatedWord.chars, {
 					color: "#5bc0be",
 					stagger: 0.1,

@@ -27,7 +27,10 @@ const Phrase1 = () => {
 
 			ScrollTrigger.create({
 				trigger: container.current,
-				start: "center center",
+				start: "top center-=20%",
+				end: () => "top-=100%",
+				scrub: true,
+				once: true,
 				animation: tl,
 			});
 		},
@@ -41,7 +44,7 @@ const Phrase1 = () => {
 			<span className="name">
 				<p className="name__detail">eh-yel</p>Eyel
 			</span>
-			&nbsp; and I make websites pr
+			&nbsp;and I make websites pr
 			<span className="pretty">
 				<EyeLashesSVG />e
 			</span>
