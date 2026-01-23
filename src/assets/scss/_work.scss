@@ -1,15 +1,26 @@
 @use "./variables" as *;
+@use "./functions" as *;
 
 .work {
 	padding: $block-margin 0;
 	background-color: $light-teal;
 
+	&__title {
+		color: $dark-blue;
+		font-size: toRem(20px);
+		margin-bottom: 6rem;
+		font-weight: $font-weight-bold;
+		text-transform: uppercase;
+		font-style: italic;
+	}
+
 	&__list {
 		list-style-type: none;
+		padding: unset;
 	}
 
 	&__item {
-		padding: 2rem 0;
+		padding: 1rem 0;
 	}
 
 	.link {
