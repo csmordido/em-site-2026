@@ -14,8 +14,6 @@ const ScrollSmootherComponent = ({ children }: ScrollSmootherComponentProps) => 
 			normalizeScroll: true,
 			effects: true,
 		});
-
-		smoother.effects(".parallax", { lag: 0.1 });
 	}, []);
 
 	return (

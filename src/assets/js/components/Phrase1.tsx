@@ -39,7 +39,7 @@ const Phrase1 = () => {
 	);
 
 	return (
-		<h1 className="phrase-1 parallax" ref={container}>
+		<h1 className="phrase-1" ref={container}>
 			Hi, I'm&nbsp;
 			<span className="name">
 				<p className="name__detail">eh-yel</p>Eyel

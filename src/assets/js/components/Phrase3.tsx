@@ -31,7 +31,7 @@ const Phrase3 = () => {
 	);
 
 	return (
-		<div className="phrase-3 parallax" ref={container}>
+		<div className="phrase-3" ref={container}>
 			<div>
 				Sometimes I&nbsp;
 				<span className="animated-link">
