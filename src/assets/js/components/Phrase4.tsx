@@ -41,7 +41,7 @@ const Phrase4 = () => {
 		<div className="phrase-4" ref={container}>
 			<div>
 				most of the time&nbsp;<span className="animated-word">build</span>&nbsp;websites for&nbsp;
-				<Link href="https://plank.co" text="Plank" ariaLabel="Visit Plank's website" />.
+				<Link href="https://plank.co" text="Plank" ariaLabel="Visit Plank's website" type="external" />.
 				<img className="web" src={web} alt="" />
 			</div>
 		</div>
