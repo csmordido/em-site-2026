@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import AsteriskSVG from "./AsteriskSVG";
 import CircleSVG from "./CircleSVG";
 import gsap from "gsap";

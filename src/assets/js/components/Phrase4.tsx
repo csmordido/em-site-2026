@@ -28,7 +28,7 @@ const Phrase4 = () => {
 			ScrollTrigger.create({
 				trigger: container.current,
 				start: "top center",
-				end: () => "top-=300%",
+				end: () => "top-=250%",
 				scrub: true,
 				once: true,
 				animation: tl,

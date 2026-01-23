@@ -8,10 +8,10 @@ import Footer from "./Footer";
 import ScrollSmootherComponent from "./ScrollSmootherComponent";
 import ContentWrapper from "./ContentWrapper";
 import { useGSAP } from "@gsap/react";
-import { DrawSVGPlugin, ScrollSmoother, ScrollTrigger, SplitText } from "gsap/all";
+import { DrawSVGPlugin, ScrollSmoother, ScrollTrigger, SplitText, ScrollToPlugin } from "gsap/all";
 import gsap from "gsap";
 
-gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger, ScrollSmoother, SplitText, useGSAP);
+gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger, ScrollSmoother, SplitText, useGSAP, ScrollToPlugin);
 
 function App() {
 	return (
