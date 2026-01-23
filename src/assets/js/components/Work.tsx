@@ -36,7 +36,7 @@ const Work = () => {
 					{work.map((item) => {
 						return (
 							<li className="work__item" key={item.title}>
-								<Link href={item.link} text={item.title} ariaLabel={item.title} />
+								<Link href={item.link} text={item.title} ariaLabel={item.title} type="external" />
 							</li>
 						);
 					})}
