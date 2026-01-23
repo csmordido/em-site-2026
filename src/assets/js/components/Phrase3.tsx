@@ -39,6 +39,7 @@ const Phrase3 = () => {
 						href="https://dev.to/plank/using-css-size-container-queries-43ef"
 						text="write"
 						ariaLabel="Go to article"
+						type="external"
 					/>
 					<WaveSVG />
 				</span>

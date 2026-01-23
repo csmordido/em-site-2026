@@ -7,19 +7,21 @@ interface LinkProps {
 	href: string;
 	text: string;
 	ariaLabel: string;
+	type?: string;
 }
 
-const Link = ({ href, text, ariaLabel }: LinkProps) => {
+const Link = ({ href, text, ariaLabel, type }: LinkProps) => {
 	const { contextSafe } = useGSAP();
 
-	const handleClick = contextSafe((event: MouseEvent, id: string) => {
-		event.preventDefault();
-		console.log("Clicked link to:", id);
-		gsap.to(window, { scrollTo: id });
+	const handleClick = contextSafe((event: MouseEvent, id: string, type?: string) => {
+		if (type !== "external") {
+			event.preventDefault();
+			gsap.to(window, { scrollTo: id });
+		}
 	});
 
 	return (
-		<a className="link" href={href} aria-label={ariaLabel} onClick={(event) => handleClick(event, href)}>
+		<a className="link" href={href} aria-label={ariaLabel} onClick={(event) => handleClick(event, href, type)}>
 			{text}
 			<div className="link__indicator">
 				<AsteriskSVG />
