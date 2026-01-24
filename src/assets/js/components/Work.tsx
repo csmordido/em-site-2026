@@ -15,7 +15,7 @@ const Work = () => {
 
 			ScrollTrigger.create({
 				trigger: container.current,
-				start: "top center",
+				start: "top center+=20%",
 				animation: gsap.from(".work__item", {
 					yPercent: 15,
 					opacity: 0,
