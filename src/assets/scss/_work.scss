@@ -29,7 +29,7 @@
 
 	.link__indicator {
 		height: clamp(0.938rem, 2.941vw + 0.055rem, 1.938rem);
-		width: auto;
+		width: clamp(0.938rem, 2.941vw + 0.055rem, 1.938rem);
 		inset-block-start: -0.8rem;
 	}
 }
